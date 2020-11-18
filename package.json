@@ -1,0 +1,23 @@
+{
+  "name": "meadowlarktravel",
+  "version": "0.0.0",
+  "description": "Sample website for Web Development with Node and Express (O'Reilly).",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mivan999/node-and-express.git"
+  },
+  "author": "Ivan Mulyavin <mivan999web@gmail.com>",
+  "license": "GPL, MIT",
+  "bugs": {
+    "url": "https://github.com/mivan999/node-and-express.git/issues"
+  },
+  "homepage": "https://github.com/mivan999/node-and-express.git",
+  "dependencies": {
+    "express": "",
+    "express-handlebars": ""
+  }
+}
