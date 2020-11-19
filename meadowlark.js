@@ -12,13 +12,7 @@ app.set('port', process.env.PORT || 3000);
 
 app.use(express.static(__dirname + '/public'));
 
-var fortuneCookies = [
-	"Conquer your fears or they will conquer you.",
-	"Rivers need springs.",
-	"Do not fear what you don't know.",
-	"You will have a pleasant surprise.",
-	"Whenever possible, keep it simple.",
-];
+
 
 app.get('/', function(req, res) {
 	res.render('home');
@@ -27,6 +21,15 @@ app.get('/about', function(req,res){
 	res.render('about', { fortune: fortune.getFortune() });
 });
 
+app.get('/tours/hood-river', function(req, res){
+	res.render('tours/hood-river');
+});
+app.get('/tours/oregon-coast', function(req, res){
+	res.render('tours/oregon-coast');
+});
+app.get('/tours/request-group-rate', function(req, res){
+	res.render('tours/request-group-rate');
+});
 // 404 catch-all handler (middleware)
 app.use(function(req, res, next){
 	res.status(404);
